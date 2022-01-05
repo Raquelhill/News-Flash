@@ -1,25 +1,21 @@
-import { useEffect, useState } from 'react';
-import { getArticles } from '../../apiCalls';
-import ArticleCardContainer from '../ArticleCardContainer/ArticleCardContainer';
 import NavBar from '../NavBar/NavBar';
-import './App.css';
+import { useEffect, useState } from 'react';
+import { getData } from '../../apiCalls';
+import ArticleCardContainer from '../ArticleCardContainer/ArticleCardContainer';
+// import SingleArticle from '../SingleArticle/SingleArticle';
 
 const App = () => {
   const [allArticles, setAllArticles] = useState([]);
-
-  const setData = (section) => {
-    getArticles(section)
-      .then((data) => setAllArticles(data.results))
-      .catch((error) => console.log('error: ', error));
-  };
+  // const [error, setError] = useState(null);
 
   useEffect(() => {
-    setData('home');
+    getData('home').then((data) => setAllArticles(data.results));
+    // .catch((error) => setError(error));
   }, []);
 
   return (
     <div className="App">
-      <NavBar setData={setData} />
+      <NavBar />
       <ArticleCardContainer allArticles={allArticles} />
     </div>
   );
