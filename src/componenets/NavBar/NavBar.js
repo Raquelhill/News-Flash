@@ -1,11 +1,18 @@
 import './NavBar.css';
 
-const NavBar = () => {
+const Nav = () => {
   return (
-    <>
-      <h1>News-Flash</h1>
-    </>
+    <nav className="nav-bar">
+      <h1>News Flash</h1>
+      <ul className="nav-links">
+        <li>Home</li>
+        <li>Arts</li>
+        <li>Science</li>
+        <li>US</li>
+        <li>World</li>
+      </ul>
+    </nav>
   );
 };
 
-export default NavBar;
+export default Nav;
