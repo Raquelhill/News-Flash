@@ -1,9 +1,29 @@
 import './ArticleCardContainer.css';
+import ArticleCard from '../ArticleCard/ArticleCard';
 
-const ArticleCardContainer = () => {
+const ArticleCardContainer = ({ allArticles }) => {
+  const articleCards = allArticles.map((article) => {
+    return (
+      <div className="articles">
+        <ArticleCard
+          title={article.title}
+          publishedDate={article.published_date}
+          multimedia={article.multimedia[0].url}
+          id={article.title}
+        />
+      </div>
+    );
+  });
+
   return (
     <>
-      <h1>News-Flash</h1>
+      <section className="articles-container">
+        {allArticles.length ? (
+          articleCards
+        ) : (
+          <h2 className="noMatch"> No results found </h2>
+        )}
+      </section>
     </>
   );
 };

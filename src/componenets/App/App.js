@@ -6,11 +6,11 @@ import ArticleCardContainer from '../ArticleCardContainer/ArticleCardContainer';
 
 const App = () => {
   const [allArticles, setAllArticles] = useState([]);
-  // const [error, setError] = useState(null);
+  // const [error, setError] = useState('');
 
   useEffect(() => {
     getData('home').then((data) => setAllArticles(data.results));
-    // .catch((error) => setError(error));
+    // .catch((error) => setError(error.message));
   }, []);
 
   return (
