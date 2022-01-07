@@ -1,12 +1,12 @@
 import './ArticleCard.css';
 
-const ArticleCard = ({ title, published_date, multimedia, id }) => {
+const ArticleCard = ({ title, multimedia, section, id }) => {
   return (
     <div>
       <article className="article-cards">
-        <p>{title}</p>
-        <p>{published_date}</p>
         <img className="card-poster" src={multimedia} alt={`${title} poster`} />
+        <p className="section">{section}</p>
+        <p className="title">{title}</p>
       </article>
     </div>
   );
