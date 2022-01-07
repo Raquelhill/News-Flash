@@ -1,6 +1,7 @@
 h1 {
   font-size: 40px;
   padding-left: 20px;
+  width: 300px;
 }
 
 .nav-bar {
@@ -9,12 +10,25 @@ h1 {
   background-color: #023366;
   color: white;
   border-top: 15px solid red;
+  text-decoration: none;
 }
 .nav-links {
   margin-top: 15px;
   margin-left: 20px;
   display: flex;
   align-items: center;
+  text-decoration: none;
+}
+
+#home {
+  text-decoration: none;
+  color: white;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+#home:hover {
+  text-decoration: underline;
 }
 
 .link-styling {
@@ -28,16 +42,4 @@ h1 {
   padding: 10px;
   font-size: 20px;
   font-weight: bold;
-}
-
-.home-btn {
-  background-color: red;
-  color: white;
-  border-radius: 3px;
-  border: none;
-  height: 40px;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 10px;
-  margin-left: 450px;
 }

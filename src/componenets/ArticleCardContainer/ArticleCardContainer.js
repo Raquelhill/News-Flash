@@ -19,7 +19,7 @@ const ArticleCardContainer = ({ allArticles }) => {
     <>
       <section className="articles-container">
         {allArticles.length ? (
-          [articleCards[0], articleCards[1], articleCards[2], articleCards[3]]
+          articleCards
         ) : (
           <h2 className="noMatch"> No results found </h2>
         )}

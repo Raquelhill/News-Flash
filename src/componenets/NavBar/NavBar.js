@@ -1,4 +1,5 @@
 import './NavBar.css';
+import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
   return (
@@ -17,7 +18,9 @@ const Nav = () => {
           <p className="news-sections">Politics</p>
           <p className="news-sections">Sports</p>
         </div>
-        <button className="home-btn">HOME</button>
+        <NavLink exact to="/" id="home" className="news-sections">
+          Home
+        </NavLink>
       </div>
     </nav>
   );
