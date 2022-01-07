@@ -7,7 +7,7 @@ const ArticleCardContainer = ({ allArticles }) => {
       <div className="articles">
         <ArticleCard
           title={article.title}
-          publishedDate={article.published_date}
+          section={article.section}
           multimedia={article.multimedia[0].url}
           id={article.title}
         />
@@ -19,7 +19,7 @@ const ArticleCardContainer = ({ allArticles }) => {
     <>
       <section className="articles-container">
         {allArticles.length ? (
-          articleCards
+          [articleCards[0], articleCards[1], articleCards[2], articleCards[3]]
         ) : (
           <h2 className="noMatch"> No results found </h2>
         )}
