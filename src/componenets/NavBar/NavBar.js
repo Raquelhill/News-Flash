@@ -3,14 +3,20 @@ import './NavBar.css';
 const Nav = () => {
   return (
     <nav className="nav-bar">
-      <h1>News Flash</h1>
-      <ul className="nav-links">
-        <li>Home</li>
-        <li>Arts</li>
-        <li>Science</li>
-        <li>US</li>
-        <li>World</li>
-      </ul>
+      <h1>
+        News <span>Flash</span>
+      </h1>
+      <div className="nav-links">
+        <p className="news-sections">Home</p>
+        <p className="news-sections">Arts</p>
+        <p className="news-sections">Science</p>
+        <p className="news-sections">US</p>
+        <p className="news-sections">World</p>
+        <p className="news-sections">Business</p>
+        <p className="news-sections">Opinion</p>
+        <p className="news-sections">Politics</p>
+        <p className="news-sections">Sports</p>
+      </div>
     </nav>
   );
 };
