@@ -7,7 +7,7 @@ const ArticleCardContainer = ({ allArticles }) => {
       <div className="articles">
         <ArticleCard
           title={article.title}
-          publishedDate={article.published_date}
+          section={article.section}
           multimedia={article.multimedia[0].url}
           id={article.title}
         />

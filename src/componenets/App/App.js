@@ -13,12 +13,30 @@ const App = () => {
     // .catch((error) => setError(error.message));
   }, []);
 
+  // return (
+  //   <main className="App">
+  //     <Route
+  //       exact
+  //       path="/"
+  //       render={() => {
   return (
-    <div className="App">
+    <>
       <NavBar />
       <ArticleCardContainer allArticles={allArticles} />
-    </div>
+    </>
   );
+  //   }}
+  // />
+  // {/* <Route
+  //   exact
+  //   path="/:id"
+  //   render={({ match }) => {
+  //     const currentArticleId = match.params.id;
+  //     return <SingleArticle id={currentArticleId} />;
+  //   }}
+  // /> */}
+  //   </main>
+  // );
 };
 
 export default App;

@@ -1,0 +1,24 @@
+.card-poster {
+  height: 500px;
+  width: 800px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(3, 29, 99, 0.5);
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+  width: 200px;
+  padding: 5px;
+  margin-top: -47px;
+}
+
+.title {
+  color: #023366;
+  font-size: 30px;
+  font-weight: bolder;
+  width: 800px;
+}
