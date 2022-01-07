@@ -17,8 +17,27 @@ h1 {
   align-items: center;
 }
 
+.link-styling {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+}
+
 .news-sections {
   padding: 10px;
   font-size: 20px;
   font-weight: bold;
+}
+
+.home-btn {
+  background-color: red;
+  color: white;
+  border-radius: 3px;
+  border: none;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  margin-left: 450px;
 }
