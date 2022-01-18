@@ -13,21 +13,18 @@ h1 {
   text-decoration: none;
 }
 
-.nav-links {
+button {
   margin-top: 15px;
   margin-left: 20px;
   display: flex;
   align-items: center;
   text-decoration: none;
-}
-
-#nav-link {
-  text-decoration: none;
+  border: none;
   color: white;
-  text-decoration: none;
+  background-color: #023366;
 }
 
-#nav-link:hover {
+button:hover {
   text-decoration: underline;
 }
 
