@@ -12,6 +12,7 @@ h1 {
   border-top: 15px solid red;
   text-decoration: none;
 }
+
 .nav-links {
   margin-top: 15px;
   margin-left: 20px;
@@ -20,22 +21,14 @@ h1 {
   text-decoration: none;
 }
 
-#home {
+#nav-link {
   text-decoration: none;
   color: white;
-  margin-top: 15px;
   text-decoration: none;
 }
 
-#home:hover {
+#nav-link:hover {
   text-decoration: underline;
-}
-
-.link-styling {
-  display: flex;
-  justify-content: flex-start;
-  width: 100%;
-  align-items: center;
 }
 
 .news-sections {

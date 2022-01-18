@@ -1,5 +1,5 @@
 import './NavBar.css';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   return (
@@ -7,20 +7,34 @@ const Nav = () => {
       <h1>
         News <span>Flash</span>
       </h1>
-      <div className="link-styling">
-        <div className="nav-links">
-          <p className="news-sections">Arts</p>
-          <p className="news-sections">Science</p>
-          <p className="news-sections">US</p>
-          <p className="news-sections">World</p>
-          <p className="news-sections">Business</p>
-          <p className="news-sections">Opinion</p>
-          <p className="news-sections">Politics</p>
-          <p className="news-sections">Sports</p>
-        </div>
-        <NavLink exact to="/" id="home" className="news-sections">
+      <div className="nav-links">
+        <Link to="arts" id="nav-link" className="news-sections">
+          Arts
+        </Link>
+        <Link to="science" id="nav-link" className="news-sections">
+          Science
+        </Link>
+        <Link to="us" id="nav-link" className="news-sections">
+          US
+        </Link>
+        <Link to="world" id="nav-link" className="news-sections">
+          World
+        </Link>
+        <Link to="business" id="nav-link" className="news-sections">
+          Business
+        </Link>
+        <Link to="opinion" id="nav-link" className="news-sections">
+          Opinion
+        </Link>
+        <Link to="politics" id="nav-link" className="news-sections">
+          Politics
+        </Link>
+        <Link to="sports" id="nav-link" className="news-sections">
+          Sports
+        </Link>
+        <Link to="home" id="nav-link" className="news-sections">
           Home
-        </NavLink>
+        </Link>
       </div>
     </nav>
   );
