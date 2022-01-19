@@ -9,12 +9,12 @@ const ArticleCardContainer = ({ allArticles }) => {
         <div>
           <ArticleCard
             key={counter++}
-            id={counter++}
             title={article.title}
             date={article.published_date}
             section={article.section}
             subsection={article.subsection}
             multimedia={article.multimedia[0].url}
+            url={article.url}
           />
         </div>
       );
