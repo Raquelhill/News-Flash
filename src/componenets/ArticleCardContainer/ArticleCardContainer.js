@@ -9,7 +9,6 @@ const ArticleCardContainer = ({ allArticles }) => {
         <div>
           <ArticleCard
             key={counter++}
-            id={counter++}
             title={article.title}
             date={article.published_date}
             section={article.section}
