@@ -1,6 +1,6 @@
 <div align="center">
 <h1>News Flash</h1>
-<p>Part of an 8 hour [take home challenge] (https://mod4.turing.edu/projects/take_home/take_home_fe) issued by Turing School of Software & Design, using the [NYT Top Stories API] (https://developer.nytimes.com/docs/top-stories-product/1/overview).  The user can view a list of articles, filter the articles by category, and click each article to visit the NY Times external site.</p>
+<p>Part of an 8 hour [take home challenge](https://mod4.turing.edu/projects/take_home/take_home_fe) issued by Turing School of Software & Design, using the [NYT Top Stories API](https://developer.nytimes.com/docs/top-stories-product/1/overview).  The user can view a list of articles, filter the articles by category, and click each article to visit the NY Times external site.</p>
 </div>
 
 ## Snapshot of Application
