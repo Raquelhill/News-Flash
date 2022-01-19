@@ -15,6 +15,7 @@ const ArticleCardContainer = ({ allArticles }) => {
             section={article.section}
             subsection={article.subsection}
             multimedia={article.multimedia[0].url}
+            url={article.url}
           />
         </div>
       );

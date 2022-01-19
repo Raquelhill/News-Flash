@@ -16,6 +16,10 @@
   margin-top: -47px;
 }
 
+#card-text {
+  text-decoration: none;
+}
+
 .title {
   color: #023366;
   font-size: 30px;
