@@ -26,8 +26,8 @@
 
 ### Organizational Tools
 [Project Spec](https://mod4.turing.edu/projects/take_home/take_home_fe) •
-[GitHub Project Board](https://github.com/madhaus4/NYTimes/projects/1) •
-[API](https://github.com/Raquelhill/news-flash/projects/1)
+[GitHub Project Board](https://github.com/Raquelhill/news-flash/projects/1) •
+[NY Times API](https://developer.nytimes.com/docs/top-stories-product/1/overview)
 
 ### Getting Started
 1. Clone down this repo 
