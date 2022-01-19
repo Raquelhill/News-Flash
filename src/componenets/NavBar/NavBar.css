@@ -1,9 +1,3 @@
-h1 {
-  font-size: 40px;
-  padding-left: 20px;
-  width: 300px;
-}
-
 .nav-bar {
   display: flex;
   align-items: center;
@@ -12,34 +6,26 @@ h1 {
   border-top: 15px solid red;
   text-decoration: none;
 }
-.nav-links {
+
+h1 {
+  font-size: 50px;
+  padding-left: 20px;
+  width: 300px;
+}
+
+button {
   margin-top: 15px;
   margin-left: 20px;
   display: flex;
   align-items: center;
   text-decoration: none;
-}
-
-#home {
-  text-decoration: none;
+  border: none;
   color: white;
-  margin-top: 15px;
-  text-decoration: none;
+  font-size: 24px;
+  font-weight: bolder;
+  background-color: #023366;
 }
 
-#home:hover {
+button:hover {
   text-decoration: underline;
-}
-
-.link-styling {
-  display: flex;
-  justify-content: flex-start;
-  width: 100%;
-  align-items: center;
-}
-
-.news-sections {
-  padding: 10px;
-  font-size: 20px;
-  font-weight: bold;
 }

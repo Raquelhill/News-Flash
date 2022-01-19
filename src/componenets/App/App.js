@@ -5,38 +5,25 @@ import ArticleCardContainer from '../ArticleCardContainer/ArticleCardContainer';
 // import SingleArticle from '../SingleArticle/SingleArticle';
 
 const App = () => {
-  const [allArticles, setAllArticles] = useState([]);
+  const [allArticles, setArticles] = useState([]);
   // const [error, setError] = useState('');
 
+  const setData = (category) => {
+    getData(category)
+      .then((data) => setArticles(data.results))
+      .catch((error) => console.log('error: ', error));
+  };
+
   useEffect(() => {
-    getData('home').then((data) => setAllArticles(data.results));
-    // .catch((error) => setError(error.message));
+    setData('world');
   }, []);
 
-  // return (
-  //   <main className="App">
-  //     <Route
-  //       exact
-  //       path="/"
-  //       render={() => {
   return (
     <>
-      <NavBar />
+      <NavBar setData={setData} />
       <ArticleCardContainer allArticles={allArticles} />
     </>
   );
-  //   }}
-  // />
-  // {/* <Route
-  //   exact
-  //   path="/:id"
-  //   render={({ match }) => {
-  //     const currentArticleId = match.params.id;
-  //     return <SingleArticle id={currentArticleId} />;
-  //   }}
-  // /> */}
-  //   </main>
-  // );
 };
 
 export default App;

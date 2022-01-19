@@ -1,27 +1,19 @@
 import './NavBar.css';
-import { NavLink } from 'react-router-dom';
 
-const Nav = () => {
+const Nav = ({ setData }) => {
   return (
     <nav className="nav-bar">
       <h1>
         News <span>Flash</span>
       </h1>
-      <div className="link-styling">
-        <div className="nav-links">
-          <p className="news-sections">Arts</p>
-          <p className="news-sections">Science</p>
-          <p className="news-sections">US</p>
-          <p className="news-sections">World</p>
-          <p className="news-sections">Business</p>
-          <p className="news-sections">Opinion</p>
-          <p className="news-sections">Politics</p>
-          <p className="news-sections">Sports</p>
-        </div>
-        <NavLink exact to="/" id="home" className="news-sections">
-          Home
-        </NavLink>
-      </div>
+      <button onClick={() => setData('arts')}>Arts</button>
+      <button onClick={() => setData('science')}>Science</button>
+      <button onClick={() => setData('us')}>US</button>
+      <button onClick={() => setData('world')}>World</button>
+      <button onClick={() => setData('business')}>Business</button>
+      <button onClick={() => setData('opinion')}>Opinion</button>
+      <button onClick={() => setData('politics')}>Politics</button>
+      <button onClick={() => setData('home')}>Home</button>
     </nav>
   );
 };
